@@ -754,30 +754,6 @@ a:focus {
     font-weight: 600;
   }
 
-  .social_box {
-    width: 100%;
-    display: flex;
-    margin-top: 25px;
-
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100%;
-      width: 40px;
-      height: 40px;
-      border: 1px solid $white;
-      color: $white;
-      font-size: 18px;
-      margin-right: 10px;
-
-      &:hover {
-        color: $primary1;
-        border-color: $primary1;
-      }
-    }
-  }
-
   .info_form {
     input {
       width: 100%;

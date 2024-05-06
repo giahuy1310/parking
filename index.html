@@ -13,7 +13,8 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-  <title>Paspark</title>
+
+  <title>G4PARK</title>
 
 
   <!-- bootstrap core css -->
@@ -50,7 +51,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Paspark
+              G4PARK
             </span>
           </a>
 
@@ -73,7 +74,10 @@
                 <a class="nav-link" href="why.html">Why Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="testimonial.html">Testimonial</a>
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="parking.html">Parking</a>
               </li>
             </ul>
           </div>
@@ -86,53 +90,22 @@
       <div class="container">
         <div class="detail-box col-md-9 mx-auto px-0">
           <h1>
-            Finding Parking Lots Made Easy
+            PARK EASY WITH G4PARK
           </h1>
           <p>
-            Necessitatibus non ducimus hic dolor? Maiores itaque vitae sit blanditiis porro, a expedita ex. Totam vel sed obcaecati. Placeat maxime asperiores deleniti tenetur officiis laboriosam laborum a nihil quisquam quis!
+            Having trouble when finding a parking spot? G4Park is here to help you. Click to find the best spot now!
           </p>
         </div>
+        
         <div class="find_form_container">
-          <form action="#">
-            <div class="form-row">
-              <div class="col-md-4 px-0">
-                <div class="form-group">
-                  <label for="">Select Parking</label>
-                  <div class="input-group">
-                    <select class="form-control">
-                      <option data-display="Highway Park">Highway Park</option>
-                      <option value="1">Highway Park</option>
-                      <option value="2">Highway Park</option>
-                      <option value="3">Highway Park</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 px-0">
-                <div class="form-group ">
-                  <label for="">Your Name</label>
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="John doe" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 px-0">
-                <div class="form-group">
-                  <label for="">Your Mobile Number</label>
-                  <div class="input-group ">
-                    <input type="text" class="form-control" placeholder="0123 456 789" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="btn-box">
-              <button type="submit" class="">
-                <span>
-                  Search Now
-                </span>
-              </button>
-            </div>
-          </form>
+          <form action="/search" method="get" class="search-bar">
+            <input type="text" id=""location" name="location" placeholder="Location" />
+            
+            <input type="datetime-local" id="departure" name="departure"> 
+
+            <input type="datetime-local" id="leaving" name="leaving">
+            <input type="submit" value="Search">
+        </form>
         </div>
       </div>
     </section>
@@ -316,72 +289,6 @@
   </section>
 
   <!-- end pricing section -->
-
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container col">
-        <h2>
-          What Says Our <span>Client</span>
-        </h2>
-      </div>
-      <div class="client_container">
-        <div class="carousel-wrap ">
-          <div class="owl-carousel client_owl-carousel">
-            <div class="item">
-              <div class="box">
-                <div class="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  </p>
-                </div>
-                <div class="client_id">
-                  <div class="img-box">
-                    <img src="images/c1.jpg" alt="" class="img-1">
-                  </div>
-                  <div class="name">
-                    <h6>
-                      Lisa Adams
-                    </h6>
-                    <p>
-                      Magna
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="detail-box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  </p>
-                </div>
-                <div class="client_id">
-                  <div class="img-box">
-                    <img src="images/c2.jpg" alt="" class="img-1">
-                  </div>
-                  <div class="name">
-                    <h6>
-                      Michel Trout
-                    </h6>
-                    <p>
-                      Magna
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
   <!-- info section -->
   <section class="info_section ">
 
@@ -399,20 +306,6 @@
                   Subscribe
                 </button>
               </form>
-              <div class="social_box">
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 info_col ">

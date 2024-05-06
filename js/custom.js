@@ -35,3 +35,20 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+window.onload = function() {
+    var today = new Date();
+    var tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
+
+    var toISOFormat = function(date) {
+        var dd = String(date.getDate()).padStart(2, '0');
+        var mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = date.getFullYear();
+        var hh = String(date.getHours()).padStart(2, '0');
+        var min = String(date.getMinutes()).padStart(2, '0');
+
+        return yyyy + '-' + mm + '-' + dd + 'T' + hh + ':' + min;
+    }
+
+    document.getElementById('departure').value = toISOFormat(today);
+    document.getElementById('leaving').value = toISOFormat(tomorrow);
+}

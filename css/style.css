@@ -901,4 +901,111 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+
+  .login_section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+
+  .login_container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  .login_container form {
+    width: 100%;
+  }
+
+  .login_container .form-group {
+    margin-bottom: 20px;
+  }
+
+  .login_container .form-control {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .login_container .btn {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login_container .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  *{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    border:0
+  }
+  
+  #header-logo{
+    width:64px;
+    height:64px;
+  }
+  #header-msg{
+    font-size: 25px;
+    color: white;
+  }
+  #btnOne{
+    background-color: #1878c5;
+    color:white;
+  }
+  #btnOne:focus,#btnOne:hover{
+    box-shadow: none;
+    outline:none;
+    background: blue;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  #tableHead{
+    background-color:rgb(25, 120, 197);
+  }
+  #searchInput{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #ced4da;
+  }
+  #searchInput:hover,#searchInput:focus{
+    box-shadow: none;
+    outline:none;
+  }
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.search-bar input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search-bar input[type="submit"] {
+    background-color: #1878c5;
+    color: white;
+    cursor: pointer;
+}
+.search-bar input[type="submit"]:hover {
+    background-color: blue;
+}
+
+
+
+
+
 /*# sourceMappingURL=style.css.map */

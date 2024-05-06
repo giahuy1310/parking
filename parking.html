@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Site Metas -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+      
+        <title>Paspark</title>
+      
+      
+        <!-- bootstrap core css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      
+        <!-- fonts style -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+      
+        <!-- nice selecy -->
+        <link rel="stylesheet" href="css/nice-select.min.css">
+      
+        <!--owl slider stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+      
+        <!-- font awesome style -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+      
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- responsive style -->
+        <link href="css/responsive.css" rel="stylesheet" />
+      
+      </head>
+\\
+<body>
+    <div class="bg-box">
+        <img src="images/slider-bg.jpg" alt="">
+      </div>
+    <header class="shadow">
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                    G4PARK
+                </span>
+              </a>
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> </span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="why.html">Why Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="parking.html">Parking <span class="sr-only">(current)</span> </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+    </header>
+    <div class="form-container mt-5">
+        <form class="w-50 mx-auto" id="entryForm">
+            <h5  style="color:white"  class="text-center">Add Car to Parking Lot</h5>
+            <div class="form-group">
+                <label style="color:white" for="owner">Owner:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="owner" placeholder="Owner">
+            </div>
+            <div class="form-group">
+                <label style="color:white"  for="car">Car:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="Car">
+            </div>
+            <div class="form-group">
+                <label style="color:white"  for="licensePlate">License Plate:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="50LD-12345...etc">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label style="color:white"  for="entryTime">Entry Time:</label>
+                    <input type="time" class="form-control rounded-0 shadow-sm" id="entryTime">
+                </div>
+                <div class="col-6">
+                    <label style="color:white"  for="exitTime">Exit Time:</label>
+                    <input type="time" class="form-control rounded-0 shadow-sm" id="exitTime">
+                </div>
+            </div>
+            <button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Add Car</button>
+        </form>
+    </div>
+    <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+            <h5 style="color:white"  class="text-center mb-3">List of Cars in Parking Lot</h5>
+            <input type="text" class="w-100 mb-3" id="searchInput" placeholder="Search records...">
+            <table class="table table-striped shadow " id="parkingTable">
+                    <thead class="text-white" id="tableHead">
+                      <tr>
+                        <th scope="col">Owner</th>
+                        <th scope="col">Car</th>
+                        <th scope="col">License Plate</th>
+                        <th scope="col">Entry Time</th>
+                        <th scope="col">Exit Time</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                     
+                    </tbody>
+                  </table>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
